@@ -1,0 +1,47 @@
+{
+  "scope": {
+    "type": "string",
+    "description": "只记录哪种会话（FriendMessage=私聊，GroupMessage=群聊）",
+    "default": "FriendMessage"
+  },
+  "min_gap_after_user": {
+    "type": "int",
+    "description": "对方至少多少分钟没说话才主动（分钟）",
+    "default": 45
+  },
+  "min_gap_between": {
+    "type": "int",
+    "description": "两次主动之间至少间隔多少分钟",
+    "default": 90
+  },
+  "min_per_day": {
+    "type": "int",
+    "description": "每天最少主动几次",
+    "default": 2
+  },
+  "max_per_day": {
+    "type": "int",
+    "description": "每天最多主动几次",
+    "default": 4
+  },
+  "quiet_hours": {
+    "type": "list",
+    "description": "不主动的时段（0-23 的整数列表）",
+    "default": [4, 5, 6]
+  },
+  "hour_weights": {
+    "type": "object",
+    "description": "每个小时的开场权重，越大越可能在这个点找你。留空用默认（从真实聊天统计出的分布）",
+    "default": {}
+  },
+  "openers_yaml": {
+    "type": "string",
+    "description": "自定义开场白，YAML 格式，例如 morning: [早上好, 起床呢]。留空用默认",
+    "default": ""
+  },
+  "tick_seconds": {
+    "type": "int",
+    "description": "检查间隔（秒）",
+    "default": 60
+  }
+}
