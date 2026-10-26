@@ -1,0 +1,6 @@
+name: astrbot_plugin_proactive
+display_name: 主动聊天
+desc: 按真实聊天规律，隔一段时间自己找上来：一天 2~4 次，落在活跃时段，你不理它也不会刷屏。
+version: v1.1.0
+author: Guzzer
+repo: https://github.com/Salt0Fish/astrbot_plugin_proactive
